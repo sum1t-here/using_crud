@@ -20,7 +20,7 @@ connectToDb();
 
 const userRoutes = require("./routes/userRoutes.js");
 
-app.get("/", userRoutes);
+app.use("/", userRoutes);
 
 // app.get("/", (req, res) => {
 //   res.send("Hello world !");
