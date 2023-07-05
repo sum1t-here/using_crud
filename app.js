@@ -3,7 +3,15 @@ require("dotenv").config(); //enabled dotenv
 const express = require("express");
 // import express from 'express';
 
+const cors = require("cors"); // allow cross origin request
+
 const connectToDb = require("./config/db.js");
+
+// Express middleware
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+app.use(cors());
 
 const app = express();
 
