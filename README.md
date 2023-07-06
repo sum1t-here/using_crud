@@ -37,7 +37,7 @@ Make sure you have Node.js and MongoDB installed on your system before running t
 
 ## Usage
 
-Once the server is running, you can access the API endpoints to perform CRUD operations on users. The base URL for the API is `http://localhost:3000`.
+Once the server is running, you can access the API endpoints to perform CRUD operations on users. The base URL for the API is `http://localhost:8000`.
 
 API Endpoints:
 
