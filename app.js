@@ -6,6 +6,7 @@ const express = require("express");
 const cors = require("cors"); // allow cross origin request
 
 const connectToDb = require("./config/db.js");
+const userRoutes = require("./routes/userRoutes.js");
 
 const app = express();
 // Express middleware
@@ -17,8 +18,6 @@ app.use(cors());
 // init connection to db
 
 connectToDb();
-
-const userRoutes = require("./routes/userRoutes.js");
 
 app.use("/", userRoutes);
 
