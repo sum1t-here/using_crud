@@ -9,8 +9,6 @@ A simple CRUD application built with Node.js, Express, and MongoDB.
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [API Reference](#api-reference)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Introduction
@@ -41,48 +39,10 @@ Once the server is running, you can access the API endpoints to perform CRUD ope
 
 API Endpoints:
 
-- `GET /users`: Retrieve all users
-- `GET /users/:id`: Get user information by ID
-- `POST /users`: Create a new user
-- `PUT /users/:id`: Update user data
-- `DELETE /users/:id`: Delete a user
-
-Refer to the API Reference section below for detailed information on each endpoint.
-
-## API Reference
-
-The API endpoints are documented below:
-
-### Retrieve all users
-
-- Endpoint: `GET /users`
-- Response: Array of user objects
-
-### Get user information by ID
-
-- Endpoint: `GET /users/:id`
-- Response: User object
-
-### Create a new user
-
-- Endpoint: `POST /users`
-- Request Body: JSON object with `name` and `email` properties
-- Response: Created user object
-
-### Update user data
-
-- Endpoint: `PUT /users/:id`
-- Request Body: JSON object with updated user properties
-- Response: Updated user object
-
-### Delete a user
-
-- Endpoint: `DELETE /users/:id`
-- Response: Success message
-
-## Contributing
-
-Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
+- `GET /getUser`: Retrieve all users
+- `POST /createUser`: Create a new user
+- `PUT /editUser`: Update user data
+- `DELETE /deleteUser`: Delete a user
 
 ## License
 
